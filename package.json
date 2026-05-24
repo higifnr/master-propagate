@@ -1,6 +1,6 @@
 {
-  "name": "master-propagate-extension",
-  "displayName": "Master Propagate",
+  "name": "master-file",
+  "displayName": "Master File",
   "publisher": "higifnr",
   "repository": { "type": "git", "url": "https://github.com/higifnr/master-propagate" },
   "license": "MIT",
