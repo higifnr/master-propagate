@@ -172,9 +172,9 @@ export function activate(context: vscode.ExtensionContext) {
 
         const { patched, hasConflicts } = applyPatch(oldContent, newContent, childContent);
 
-        if (!hasConflicts) {
-          fs.writeFileSync(childFsPath, patched, 'utf8');
-        } else {
+        fs.writeFileSync(childFsPath, patched, 'utf8');
+
+        if (hasConflicts) {
           conflictedChildren.push({
             childFsPath,
             base: oldContent,

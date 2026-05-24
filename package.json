@@ -6,9 +6,15 @@
   "license": "MIT",
   "description": "Propagate changes from a master file to child files on save",
   "version": "0.1.0",
-  "engines": { "vscode": "^1.85.0" },
-  "categories": ["Other"],
-  "activationEvents": ["onStartupFinished"],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -58,7 +64,10 @@
       "properties": {
         "masterPropagate.childSnapshotBehavior": {
           "type": "string",
-          "enum": ["alwaysTrackMaster", "snapshotAtCreation"],
+          "enum": [
+            "alwaysTrackMaster",
+            "snapshotAtCreation"
+          ],
           "default": "alwaysTrackMaster",
           "description": "alwaysTrackMaster: diffs master's previous vs current state and patches children. snapshotAtCreation: diffs master's creation-time snapshot vs current state."
         }
@@ -76,7 +85,8 @@
     "typescript": "^5.3.0"
   },
   "dependencies": {
+    "@types/diff": "^5.0.9",
     "diff": "^5.1.0",
-    "@types/diff": "^5.0.9"
+    "node-diff3": "^3.2.0"
   }
 }
