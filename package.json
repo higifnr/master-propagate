@@ -1,5 +1,5 @@
 {
-  "name": "master-propagate",
+  "name": "master-propagate-extension",
   "displayName": "Master Propagate",
   "publisher": "higifnr",
   "repository": { "type": "git", "url": "https://github.com/higifnr/master-propagate" },
